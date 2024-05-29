@@ -1,7 +1,7 @@
 export const config = {
     // Inference settings
-    inferenceModelProvider: 'groq', // 'groq' or 'openai'
-    inferenceModel: 'llama3-8b-8192', // Groq: 'llama3-70b-8192' or 'llama3-8b-8192'.. OpenAI: 'gpt-4-turbo etc
+    inferenceModelProvider: 'openai', // 'groq' or 'openai'
+    inferenceModel: 'gpt-4o', // Groq: 'llama3-70b-8192' or 'llama3-8b-8192'.. OpenAI: 'gpt-4-turbo etc
 
     // Whisper settings
     whisperModelProvider: 'openai', // 'groq' or 'openai'
@@ -14,14 +14,14 @@ export const config = {
 
     // OPTIONAL:Vision settings 
     visionModelProvider: 'google', // 'openai' or 'fal.ai' or 'google'
-    visionModel: 'gemini-1.5-flash-latest', // OpenAI: 'gpt-4o' or  Fal.ai: 'llava-next' or  Google: 'gemini-1.5-flash-latest'
+    visionModel: 'gpt-4o', // OpenAI: 'gpt-4o' or  Fal.ai: 'llava-next' or  Google: 'gemini-1.5-flash-latest'
 
     // Function calling + conditionally rendered UI 
     functionCallingModelProvider: 'openai', // 'openai' current only
-    functionCallingModel: 'gpt-3.5-turbo', // OpenAI: 'gpt-3-5-turbo'
+    functionCallingModel: 'gpt-4o', // OpenAI: 'gpt-3-5-turbo'
 
     // UI settings 
-    enableResponseTimes: false, // Display response times for each message
+    enableResponseTimes: true, // Display response times for each message
     enableSettingsUIToggle: true, // Display the settings UI toggle
     enableTextToSpeechUIToggle: true, // Display the text to speech UI toggle
     enableInternetResultsUIToggle: true, // Display the internet results UI toggle
